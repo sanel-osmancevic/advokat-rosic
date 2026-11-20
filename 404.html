@@ -4,26 +4,29 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <!-- GitHub Pages ovu stranicu prikazuje za bilo koju pogrešnu adresu, i u podfolderima.
-       Zato se osnova za stilove i slike određuje ovde: /advokat-rosic/ na github.io, / na sopstvenom domenu. -->
+       Zato se osnova za stilove i slike određuje ovde: /advokat-rosic/ na github.io, / na sopstvenom domenu.
+       Stilovi, ikonice i logo se upisuju iz skripte, da ih pregledač ne bi unapred tražio sa pogrešne adrese. -->
   <script>
     (function () {
       var base = location.pathname.indexOf("/advokat-rosic/") === 0 ? "/advokat-rosic/" : "/";
-      document.write('<base href="' + base + '">');
+      document.write(
+        '<base href="' + base + '">' +
+        '<link rel="icon" href="favicon.ico" sizes="any">' +
+        '<link rel="apple-touch-icon" href="assets/apple-touch-icon.png">' +
+        '<link rel="stylesheet" href="styles.css?v=11">'
+      );
     })();
   </script>
   <title>Stranica nije pronađena – Advokat Marko Rosić</title>
   <meta name="robots" content="noindex">
   <meta name="theme-color" content="#1c2a2b">
-  <link rel="icon" href="favicon.ico" sizes="any">
-  <link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
-  <link rel="stylesheet" href="styles.css?v=11">
 </head>
 <body>
   <main class="hero hero--404" id="main">
     <div class="hero__pattern hero__pattern--left" aria-hidden="true"></div>
     <div class="hero__pattern hero__pattern--right" aria-hidden="true"></div>
     <div class="container hero__inner">
-      <img class="hero__logo" src="assets/monogram.webp" alt="RM monogram" width="491" height="247">
+      <script>document.write('<img class="hero__logo" src="assets/monogram.webp" alt="RM monogram" width="491" height="247">');</script>
       <p class="eyebrow">Greška 404</p>
       <h1>Stranica nije<br><em>pronađena</em></h1>
       <p class="hero__lead">Adresa koju ste otvorili ne postoji ili je promenjena. Sve informacije o kancelariji nalaze se na početnoj stranici.</p>
