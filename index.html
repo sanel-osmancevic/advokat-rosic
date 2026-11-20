@@ -4,20 +4,70 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Advokat Marko Rosić</title>
-  <meta name="description" content="Advokat Marko Rosić, Subotica – pravno savetovanje i zastupanje fizičkih i pravnih lica. Dimitrija Tucovića 14a, tel. 064/311-9999.">
-  <link rel="icon" type="image/png" href="assets/monogram.png">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css?v=3">
+  <meta name="description" content="Advokat Marko Rosić, Subotica. Pravno savetovanje i zastupanje fizičkih i pravnih lica. Dimitrija Tucovića 14a, tel. 064/311-9999.">
+  <meta name="theme-color" content="#1c2a2b">
+  <link rel="canonical" href="https://sanel-osmancevic.github.io/advokat-rosic/">
+
+  <!-- Ikonice -->
+  <link rel="icon" href="favicon.ico" sizes="any">
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32.png">
+  <link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+  <link rel="manifest" href="site.webmanifest">
+
+  <!-- Prikaz linka u Viberu, WhatsApp-u, Facebook-u -->
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="sr_RS">
+  <meta property="og:site_name" content="Advokat Marko Rosić">
+  <meta property="og:title" content="Advokat Marko Rosić – Subotica">
+  <meta property="og:description" content="Pravno savetovanje i zastupanje fizičkih i pravnih lica. Dimitrija Tucovića 14a, Subotica.">
+  <meta property="og:url" content="https://sanel-osmancevic.github.io/advokat-rosic/">
+  <meta property="og:image" content="https://sanel-osmancevic.github.io/advokat-rosic/assets/og-image.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Logo: Advokat Rosić Marko">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <!-- Fontovi su na samom sajtu (assets/fonts), bez učitavanja sa Google servera -->
+  <link rel="preload" href="assets/fonts/lato-400-latin.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="assets/fonts/cormorant-garamond-normal-latin.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="styles.css?v=11">
+  <!-- Podaci o kancelariji za Google -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Attorney",
+    "name": "Advokat Marko Rosić",
+    "url": "https://sanel-osmancevic.github.io/advokat-rosic/",
+    "image": "https://sanel-osmancevic.github.io/advokat-rosic/assets/og-image.jpg",
+    "logo": "https://sanel-osmancevic.github.io/advokat-rosic/assets/icon-512.png",
+    "telephone": "+381643119999",
+    "email": "rosicmarko0000@gmail.com",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Dimitrija Tucovića 14a",
+      "postalCode": "24000",
+      "addressLocality": "Subotica",
+      "addressCountry": "RS"
+    },
+    "areaServed": { "@type": "City", "name": "Subotica" },
+    "openingHoursSpecification": [{
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+      "opens": "09:00",
+      "closes": "17:00"
+    }],
+    "knowsAbout": ["Krivično pravo", "Građansko pravo", "Porodično pravo", "Privredno pravo", "Nepokretnosti", "Radno pravo", "Nasledno pravo", "Upravni postupak"]
+  }
+  </script>
 </head>
 <body>
+  <a class="skip-link" href="#main">Preskoči na sadržaj</a>
 
   <!-- Navigacija -->
   <header class="nav" id="nav">
     <div class="container nav__inner">
       <a href="#pocetna" class="nav__brand" aria-label="Advokat Marko Rosić – početna">
-        <img src="assets/monogram.png" alt="" width="58" height="29">
+        <img src="assets/monogram-small.webp" alt="" width="58" height="29">
         <span class="nav__brand-text">
           <small>Advokat</small>
           Rosić Marko
@@ -28,24 +78,26 @@
       </button>
       <nav class="nav__menu" id="navMenu">
         <a href="#o-advokatu">O advokatu</a>
-        <a href="#cime-se-bavimo">Čime se bavimo</a>
+        <a href="#cime-se-bavim">Čime se bavim</a>
         <a href="#saradnja">Saradnja</a>
         <a href="#kontakt" class="btn btn--outline btn--sm">Kontakt</a>
       </nav>
     </div>
   </header>
 
+  <main id="main" tabindex="-1">
+
   <!-- Početni ekran -->
   <section class="hero" id="pocetna">
     <div class="hero__pattern hero__pattern--left" aria-hidden="true"></div>
     <div class="hero__pattern hero__pattern--right" aria-hidden="true"></div>
     <div class="container hero__inner">
-      <img class="hero__logo" src="assets/monogram.png" alt="RM monogram" width="491" height="247">
+      <img class="hero__logo" src="assets/monogram.webp" fetchpriority="high" alt="RM monogram" width="491" height="247">
       <p class="eyebrow">Subotica</p>
       <h1>Advokat<br><em>Marko Rosić</em></h1>
       <p class="hero__lead">Pravno savetovanje i zastupanje fizičkih i pravnih lica pred sudovima i drugim državnim organima.</p>
       <div class="hero__actions">
-        <a href="#cime-se-bavimo" class="btn btn--gold">Čime se bavimo</a>
+        <a href="#cime-se-bavim" class="btn btn--gold">Čime se bavim</a>
         <a href="#kontakt" class="btn btn--ghost">Kontakt</a>
       </div>
     </div>
@@ -56,7 +108,7 @@
     <div class="container about">
       <div class="about__visual" aria-hidden="true">
         <div class="about__frame">
-          <img src="assets/monogram.png" alt="">
+          <img src="assets/monogram.webp" alt="" loading="lazy" width="491" height="247">
           <span>Advokat</span>
           <strong>Rosić Marko</strong>
         </div>
@@ -85,13 +137,13 @@
     </div>
   </section>
 
-  <!-- Čime se bavimo -->
-  <section class="section section--dark" id="cime-se-bavimo">
+  <!-- Čime se bavim -->
+  <section class="section section--dark" id="cime-se-bavim">
     <div class="container">
       <div class="section__head">
-        <p class="eyebrow">Čime se bavimo</p>
+        <p class="eyebrow">Čime se bavim</p>
         <h2>Grane prava i vrste predmeta</h2>
-        <p>Pregled predmeta koje kancelarija vodi. Za pitanja koja ovde nisu navedena možete se obratiti putem kontakt podataka.</p>
+        <p>Pregled predmeta koje advokat vodi. Za pitanja koja ovde nisu navedena možete se obratiti putem kontakt podataka.</p>
       </div>
 
       <div class="practice">
@@ -231,29 +283,39 @@
         </div>
         <div class="field">
           <label for="poruka">Kratak opis</label>
-          <textarea id="poruka" name="poruka" rows="5" required></textarea>
+          <textarea id="poruka" name="poruka" rows="5" maxlength="1500" required></textarea>
         </div>
         <button type="submit" class="btn btn--dark">Pošaljite poruku</button>
         <p class="form__note" id="formNote" role="status"></p>
+        <p class="form__privacy">Podaci iz poruke koriste se samo za odgovor na vaš upit. Više u <a href="privatnost.html">politici privatnosti</a>.</p>
       </form>
     </div>
   </section>
+
+  </main>
 
   <!-- Footer -->
   <footer class="footer">
     <div class="container footer__inner">
       <a href="#pocetna" class="nav__brand">
-        <img src="assets/monogram.png" alt="" width="58" height="29">
+        <img src="assets/monogram-small.webp" alt="" width="58" height="29">
         <span class="nav__brand-text">
           <small>Advokat</small>
           Rosić Marko
         </span>
       </a>
-      <p class="footer__note">Sadržaj ovog sajta ima isključivo informativni karakter i ne predstavlja pravni savet.</p>
+      <p class="footer__note">Sadržaj ovog sajta ima isključivo informativni karakter i ne predstavlja pravni savet. <a href="privatnost.html">Politika privatnosti</a></p>
       <p class="footer__copy">© <span id="year">2026</span> Advokat Marko Rosić. Sva prava zadržana.</p>
     </div>
   </footer>
 
-  <script src="script.js?v=2"></script>
+  <!-- Dugme za poziv (samo na telefonu) -->
+  <a href="tel:+381643119999" class="call-btn" id="callBtn" aria-label="Poziv: 064/311-9999" title="064/311-9999">
+    <svg viewBox="0 0 24 24" width="26" height="26" aria-hidden="true" focusable="false">
+      <path fill="currentColor" d="M6.62 10.79a15.05 15.05 0 0 0 6.59 6.59l2.2-2.2a1 1 0 0 1 1.02-.24 11.4 11.4 0 0 0 3.57.57 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.25.2 2.45.57 3.57a1 1 0 0 1-.25 1.02l-2.2 2.2Z"/>
+    </svg>
+  </a>
+
+  <script src="script.js?v=6"></script>
 </body>
 </html>
