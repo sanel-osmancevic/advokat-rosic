@@ -30,7 +30,7 @@
 
   // Diskretna pojava sekcija pri skrolu
   var targets = document.querySelectorAll(
-    ".section__head, .about__visual, .about__text, .practice__item, .steps li, .quote blockquote, .contact__info, .contact__form"
+    ".section__head, .about__visual, .about__text, .practice__item, .steps li,.contact__info, .contact__form"
   );
   if ("IntersectionObserver" in window) {
     var io = new IntersectionObserver(function (entries) {
