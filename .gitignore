@@ -1,0 +1,9 @@
+# Lokalna podešavanja
+.claude/
+.vscode/
+.idea/
+
+# Sistemski fajlovi
+.DS_Store
+Thumbs.db
+desktop.ini
